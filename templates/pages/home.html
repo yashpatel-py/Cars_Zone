@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load humanize %}
+
 {% load static %}
 
 {% block content %}
@@ -137,7 +139,7 @@
                                 <a href="car-details.html" class="car-img">
                                     <div class="tag-2">Featured</div>
                                     <div class="price-box">
-                                        <span>${{ cars.price }}</span>
+                                        <span>${{ cars.price |  intcomma}}</span>
                                     </div>
                                     <img class="d-block w-100" src="{{cars.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px;">
                                 </a>
@@ -185,7 +187,7 @@
                                 </div>
                                 <ul class="facilities-list clearfix">
                                     <li>{{cars.fuel_type}}</li>
-                                    <li>{{cars.miles}} km</li>
+                                    <li>{{cars.miles | intcomma}} km</li>
                                     <li>{{cars.transmission}}</li>
                                     <li>{{cars.body_style}}</li>
                                     <li>{{cars.color}}</li>
@@ -231,7 +233,7 @@
                             <div class="facilities-list clearfix">
                                 <ul>
                                     <li>
-                                        <span><i class="flaticon-way"></i></span>{{cars.miles}} km
+                                        <span><i class="flaticon-way"></i></span>{{cars.miles | intcomma}} km
                                     </li>
                                     <li>
                                         <span><i class="flaticon-calendar-1"></i></span>{{cars.year}}
@@ -290,7 +292,7 @@
                             <p class="cartype">{{cars.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">${{cars.price}}</p>
+                            <p class="price">${{cars.price | intcomma}}</p>
                         </div>
                     </div>
                 </div>
