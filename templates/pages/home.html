@@ -178,7 +178,7 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="car-details.html">{{ cars.car_title }}</a>
+                                    <a href="{% url 'car_detail' cars.id %}">{{ cars.car_title }}</a>
                                 </h1>
                                 <div class="location">
                                     <a href="car-details.html">
@@ -322,7 +322,7 @@
                             <div class="team-1">
                                 <div class="photo">
                                     <a href="#">
-                                        <img src="{{team.photo.url}}" alt="team-1" class="img-fluid">
+                                        <img src="{{team.photo.url}}" alt="team-1" class="img-fluid" style="min-height: 242px; max-height: 242px;">
                                     </a>
                                     <div class="social-list clearfix">
                                         <a href="{{team.facebook_link}}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
