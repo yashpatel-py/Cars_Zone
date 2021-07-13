@@ -3,6 +3,11 @@ This peoject is purely based on django which is python web framework.
 
 ## Setup steps
 - Clone the code
+- Write command `pip install pipenv` to create virtual env and install packages form pipfile
+- After installing `pipenv` wte command `pipenv install` This command will create virtual env and install all packages automatically
+
+## OR
+
 - Install all tha backages using command `pip install -r requirements.txt`
 - Now you need to install **POSTGRESQL** for databse and create your data base and give your password
 
