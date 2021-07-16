@@ -20,3 +20,10 @@ def car_detail(request, id):
         'single_car':single_car
     }
     return render(request, 'cars/car_detail.html', data)
+
+def search(request):
+    cars = Car.objects.order_by('-created_at')
+    data = {
+        'cars': cars,
+    }
+    return render(request, 'cars/search.html', data)
