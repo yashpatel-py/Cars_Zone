@@ -1,11 +1,15 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Car
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 def cars(request):
     cars = Car.objects.order_by('-created_at')
+    pagimator = Paginator(cars, 2)
+    page = request.GET.get('page')
+    paged_cars = pagimator.get_page(page)
     data = {
-        'cars': cars,
+        'cars': paged_cars,
     }
     return render(request, 'cars/cars.html', data)
 

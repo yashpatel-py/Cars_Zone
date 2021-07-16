@@ -92,17 +92,37 @@
                 <!-- Page navigation start -->
                 <div class="pagination-box p-box-2 text-center">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
-                            </li>
-                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
-                            </li>
-                        </ul>
+                        {% if cars.has_other_pages %}
+                            <ul class="pagination">
+                                {% if cars.has_previous %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ cars.previous_page_number }}"><i class="fa fa-angle-left"></i></a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
+                                    </li>
+                                {% endif %}
+
+                                {% for page in cars.paginator.page_range %}
+                                    {% if page == cars.number %}
+                                        <li class="page-item"><a class="page-link active" href="#">{{ page }}</a></li>
+                                    {% else %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ page }}">{{ page }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if cars.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                                </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        {% endif %}
                     </nav>
                 </div>
             </div>
