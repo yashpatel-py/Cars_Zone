@@ -8,8 +8,16 @@ def cars(request):
     pagimator = Paginator(cars, 2)
     page = request.GET.get('page')
     paged_cars = pagimator.get_page(page)
+    model_search = Car.objects.values_list('model', flat=True).distinct()
+    city_search = Car.objects.values_list('city', flat=True).distinct()
+    year_search = Car.objects.values_list('year', flat=True).distinct()
+    body_style_search = Car.objects.values_list('body_style', flat=True).distinct()
     data = {
         'cars': paged_cars,
+        'model_search': model_search,
+        'city_search': city_search,
+        'year_search': year_search,
+        'body_style_search': body_style_search,
     }
     return render(request, 'cars/cars.html', data)
 
@@ -23,6 +31,13 @@ def car_detail(request, id):
 
 def search(request):
     cars = Car.objects.order_by('-created_at')
+
+    model_search = Car.objects.values_list('model', flat=True).distinct()
+    city_search = Car.objects.values_list('city', flat=True).distinct()
+    year_search = Car.objects.values_list('year', flat=True).distinct()
+    body_style_search = Car.objects.values_list('body_style', flat=True).distinct()
+    transmission_search = Car.objects.values_list('transmission', flat=True).distinct()
+
     if 'keyword' in request.GET:
         keyword = request.GET['keyword']
         if keyword:
@@ -59,5 +74,10 @@ def search(request):
     paged_cars = pagimator.get_page(page)
     data = {
         'cars': paged_cars,
+        'model_search': model_search,
+        'city_search': city_search,
+        'year_search': year_search,
+        'body_style_search': body_style_search,
+        'transmission_search': transmission_search,
     }
     return render(request, 'cars/search.html', data)
