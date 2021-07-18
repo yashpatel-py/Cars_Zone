@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'django.contrib.humanize',
     'debug_toolbar',
+    'accounts.apps.AccountsConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
