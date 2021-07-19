@@ -11,7 +11,6 @@ This peoject is purely based on django which is python web framework.
 - Write command `python manage.py collactstatic` to run the server
 - Write command `python manage.py runserver` to start the server
 
-
 ## OR
 
 - Install all tha backages using command `pip install -r requirements.txt`
@@ -22,3 +21,22 @@ This peoject is purely based on django which is python web framework.
 - After setup like above snapshot you need to run command `python manage.py migrate`
 
 ![postgresql setup snapshot](./resources/postgre_table.png)
+
+## Login wirh facebook setup
+- Go to https://developers.facebook.com/
+- Clock on get started
+- Create a new app
+- Go to products and select facebook login set up
+- Click on web
+- Enter the url of the server like this `http://localhost:8000/` because facebook will not recignize `127.0.0.1` as a valid url
+- Click on save
+- Got to `Settings` and `Basic` tab copy the `App ID` and `App Secret`
+- Go to `http://localhost:8000/admin/` and login with superuser credentials
+- In admin panel go to `Social Account` and add a new `Social application`
+- In place of `Provider` select `Facebook` and `Name` write `Facebook login`
+- In `Client id` write the `App ID` that we copied from facebook
+- In `Secret` write the `Secret key` that we copied from facebook
+- from sits in available tab you will see example.com just shift it to right side and save it
+- After saving you will see go to admin home and you will se site option go there and click in `example.com` there change Domain to `localhost:8000` and Display name to `localhost:8000` and save it
+
+![postgresql setup snapshot](./resources/facebook_setup.png)

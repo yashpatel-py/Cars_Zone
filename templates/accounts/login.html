@@ -2,6 +2,11 @@
 
 {% load static %}
 
+{% load socialaccount %}
+
+{% providers_media_js %}
+
+
 {% block title %} | Login{% endblock title %}
 
 {% block content %}
@@ -48,7 +53,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <ul class="social-list">
-                            <li><a href="#" class="facebook-bg"><i class="fa fa-facebook facebook-i"></i><span>Facebook</span></a></li>
+                            <li><a href="{% provider_login_url 'facebook' method='oauth2' %}" class="facebook-bg"><i class="fa fa-facebook facebook-i"></i><span>Facebook</span></a></li>
                             <li><a href="#" class="google-bg"><i class="fa fa-google google-i"></i><span>Google</span></a></li>
                         </ul>
                     </form>
