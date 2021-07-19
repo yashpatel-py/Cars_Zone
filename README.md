@@ -8,6 +8,7 @@ This peoject is purely based on django which is python web framework.
 - Write command `pipenv shell` to start the virtual env
 - Write command `python manage.py migrate` to migrate the database
 - Write command `python manage.py createsuperuser` to create superuser
+- Write command `python manage.py collactstatic` to run the server
 - Write command `python manage.py runserver` to start the server
 
 
