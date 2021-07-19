@@ -479,3 +479,8 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+// time out code for 3 seconds
+setTimeout(function () {
+    $('#message').fadeOut('slow');
+}, 4000);

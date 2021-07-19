@@ -27,6 +27,7 @@
                         </a>
                     </div>
                     <h3>Create an account</h3>
+                    {% include 'includes/messages.html' %}
                     <form action="{% url 'register' %}" method="post">
                         {% csrf_token %}
                         <div class="form-group form-box">
