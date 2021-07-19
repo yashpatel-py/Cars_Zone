@@ -27,13 +27,14 @@
                         </a>
                     </div>
                     <h3>Sign into your account</h3>
-                    <form action="#" method="GET">
+                    <form action="{% url 'login' %}" method="post">
+                        {% csrf_token %}
                         <div class="form-group form-box">
                             <input type="email" name="email" class="input-text" placeholder="Email Address" required>
                             <i class="flaticon-mail"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="password" name="Password" class="input-text" placeholder="Password" required>
+                            <input type="password" name="password" class="input-text" placeholder="Password" required>
                             <i class="flaticon-lock"></i>
                         </div>
                         <div class="form-group mb-0 clearfix">

@@ -5,6 +5,8 @@ def login(request):
     return render(request, 'accounts/login.html')
 
 def register(request):
+    if request.method == 'POST':
+        print(request.POST)
     return render(request, 'accounts/register.html')
 
 def dashboard(request):
