@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
-from django.contrib import messages
+from django.contrib import messages, auth
+from django.contrib.auth.models import User
 
 # Create your views here.
 def login(request):
@@ -7,8 +8,32 @@ def login(request):
 
 def register(request):
     if request.method == 'POST':
-        messages.error(request, 'There was an error processing your request.')
-    return render(request, 'accounts/register.html')
+        firstname = request.POST['firstname']
+        lastname = request.POST['lastname']
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+        confirm_password = request.POST['confirm_password']
+
+        if password == confirm_password:
+            if User.objects.filter(username=username).exists():
+                messages.error(request, 'Username already exists')
+                return redirect('register')
+            else:
+                if User.objects.filter(email=email).exists():
+                    messages.error(request, 'Email already exists')
+                    return redirect('register')            
+                else:
+                    user = User.objects.create_user(username=username, password=password, email=email, first_name=firstname, last_name=lastname)
+                    auth.login(request, user)
+                    messages.success(request, 'You are now logged in')
+                    return redirect('dashboard')
+        else:
+            messages.error(request, 'Passwords do not match')
+            return redirect('register')
+    else:
+        return render(request, 'accounts/register.html')
+
 
 def dashboard(request):
     return render(request, 'accounts/dashboard.html')
