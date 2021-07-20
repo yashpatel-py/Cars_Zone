@@ -12,6 +12,7 @@ This peoject is purely based on django which is python web framework.
 - Write command `python manage.py runserver` to start the server
 
 ## OR
+=======
 
 - Install all tha backages using command `pip install -r requirements.txt`
 - Now you need to install **POSTGRESQL** for databse and create your data base and give your password
