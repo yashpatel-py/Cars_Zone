@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'debug_toolbar',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 
     # this is for social authentication
     'django.contrib.sites',

@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% load humanize %}
 
 {% block title %} | {{ single_car.car_title }} {% endblock title %}
@@ -27,6 +29,7 @@
                 <div class="car-details-section">
                     <!-- Heading start -->
                     <div class="heading-car clearfix">
+                        {% include 'includes/messages.html' %}
                         <div class="pull-left">
                             <h3>{{ single_car.car_title }}</h3>
                             <h6>
@@ -73,36 +76,36 @@
                             <ul class="carousel-indicators car-properties list-inline nav nav-justified">
 
                                 {% if single_car.car_photo_1 %}
-                                    <li class="list-inline-item active">
-                                        <a id="carousel-selector-0" class="selected" data-slide-to="0"
-                                            data-target="#carDetailsSlider">
-                                            <img src="{{ single_car.car_photo_1.url }}" class="img-fluid" alt="small-car">
-                                        </a>
-                                    </li>
+                                <li class="list-inline-item active">
+                                    <a id="carousel-selector-0" class="selected" data-slide-to="0"
+                                        data-target="#carDetailsSlider">
+                                        <img src="{{ single_car.car_photo_1.url }}" class="img-fluid" alt="small-car">
+                                    </a>
+                                </li>
                                 {% endif %}
 
                                 {% if single_car.car_photo_2 %}
-                                    <li class="list-inline-item">
-                                        <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
-                                            <img src="{{ single_car.car_photo_2.url }}" class="img-fluid" alt="small-car">
-                                        </a>
-                                    </li>
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                        <img src="{{ single_car.car_photo_2.url }}" class="img-fluid" alt="small-car">
+                                    </a>
+                                </li>
                                 {% endif %}
 
                                 {% if single_car.car_photo_3 %}
-                                    <li class="list-inline-item">
-                                        <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
-                                            <img src="{{ single_car.car_photo_3.url }}" class="img-fluid" alt="small-car">
-                                        </a>
-                                    </li>
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                        <img src="{{ single_car.car_photo_3.url }}" class="img-fluid" alt="small-car">
+                                    </a>
+                                </li>
                                 {% endif %}
 
                                 {% if single_car.car_photo_4 %}
-                                    <li class="list-inline-item">
-                                        <a id="carousel-selector-3" data-slide-to="3" data-target="#carDetailsSlider">
-                                            <img src="{{ single_car.car_photo_4.url }}" class="img-fluid" alt="small-car">
-                                        </a>
-                                    </li>
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-3" data-slide-to="3" data-target="#carDetailsSlider">
+                                        <img src="{{ single_car.car_photo_4.url }}" class="img-fluid" alt="small-car">
+                                    </a>
+                                </li>
                                 {% endif %}
                             </ul>
                         </div>
@@ -152,7 +155,7 @@
                     <!-- Advanced search start -->
                     <div class="widget advanced-search d-none-992">
                         <button class="btn btn-outline-danger bomd btn-block b14tn-lg" data-toggle="modal"
-                            data-target="#inquiryModal">Send message</button>0
+                            data-target="#inquiryModal">Send message</button>
                         <br>
                         <h3 class="sidebar-title">Refine Your Search</h3>
                         <ul>
@@ -224,70 +227,94 @@
                             <div class="modal-content">
                                 <div class="contact-dealer modal-header">
                                     <!-- <h5 class="modal-title" id="inquiryModalLabel">Contact Dealer</h5> -->
-                                    <img src="img/logos/logo-black-white.png">
+                                    <center><img src="{% static 'img/logos/logo-black-white.png' %}"></center>
                                     <button type="button" class="close" data-dismiss="modal">
                                         <span>&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="#">
+                                <!-- inquery form -->
+                                    <form action="{% url 'inquiry' %}" method="post">
+                                        {% csrf_token %}
+                                        {% if user.is_authenticated %}
+                                            <input type="hidden" name="user_id" value="{{ user.id }}">
+                                        {% else %}
+                                            <input type="hidden" name="user_id" value="0">
+                                        {% endif %}
+
+                                        <input type="hidden" name="car_id" value="{{ single_car.id }}">
                                         <div class="form-group">
                                             <label for="name" class="col-form-label">Hello, My Name is</label>
                                             <div class="row">
+                                                <!--First name-->
                                                 <div class="col">
-                                                    <input type="text" name="first_name" class="form-control"
-                                                        placeholder="First Name" required>
+                                                    <input type="text" name="first_name" class="form-control" placeholder="First Name" 
+                                                    {% if user.is_authenticated %}
+                                                        value="{{ user.first_name }}"
+                                                    {% endif %} required>
                                                 </div>
+                                                <!--First name-->
+
+                                                <!--Last name-->
                                                 <div class="col">
-                                                    <input type="text" name="last_name" class="form-control"
-                                                        placeholder="Last Name" required>
+                                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" {% if user.is_authenticated %}
+                                                        value="{{ user.last_name }}"
+                                                    {% endif %} required>
                                                 </div>
+                                                <!-- End Last name -->
                                             </div>
                                         </div>
+
+                                        <!-- customer_need -->
                                         <div class="form-group">
                                             <select class="form-control" id="sel1" name="customer_need">
                                                 <option value="I'm interested in this">I'm interested in this</option>
-                                                <option value="I'd like to know your best price for this">I'd like to
-                                                    know your best price for this</option>
-                                                <option value="I'd like to test drive this">I'd like to test drive this
-                                                </option>
+                                                <option value="I'd like to know your best price for this">I'd like to know your best price for this</option>
+                                                <option value="I'd like to test drive this">I'd like to test drive this </option>
                                                 <option value="I'd like a history report for this">I'd like a history
                                                     report for this</option>
                                             </select>
                                         </div>
+                                        <!-- end customer_need -->
 
+                                        <!-- Car title -->
                                         <div class="form-group">
-                                            <input type="text" name="car_title" class="form-control"
-                                                value="LAMBORGHINI HURACÁN." readonly>
+                                            <input type="text" name="car_title" class="form-control" value="{{ single_car.car_title }}" readonly>
                                         </div>
+                                        <!-- end Car title -->
 
+                                        <!-- i live in -->
                                         <div class="form-group">
                                             <label for="name" class="col-form-label">I live in</label>
                                             <div class="row">
                                                 <div class="col">
-                                                    <input type="text" name="city" class="form-control"
-                                                        placeholder="City" required>
+                                                    <input type="text" name="city" class="form-control" placeholder="City" required>
                                                 </div>
                                                 <div class="col">
-                                                    <input type="text" name="state" class="form-control"
-                                                        placeholder="State" required>
+                                                    <input type="text" name="state" class="form-control" placeholder="State" required>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- end i live in -->
 
                                         <div class="form-group">
                                             <div class="row">
+                                                <!-- Email -->
                                                 <div class="col">
-                                                    <label for="name" class="col-form-label">You can reach me by email
-                                                        at</label>
-                                                    <input type="email" name="email" class="form-control"
-                                                        placeholder="Email Address" required>
+                                                    <label for="name" class="col-form-label">You can reach me by email at</label>
+                                                    <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                                    {% if user.is_authenticated %}
+                                                        value="{{ user.email }}"
+                                                    {% endif %} required>
                                                 </div>
+                                                <!-- End Email -->
+
+                                                <!-- Phone -->
                                                 <div class="col">
                                                     <label for="phone" class="col-form-label">or by phone at</label>
-                                                    <input type="text" name="phone"
-                                                        placeholder="Phone Number (optional)" class="form-control">
+                                                    <input type="text" name="phone" placeholder="Phone Number (optional)" class="form-control">
                                                 </div>
+                                                <!-- End Phone -->
                                             </div>
                                         </div>
 
