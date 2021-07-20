@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'cars.apps.CarsConfig',
     'ckeditor',
     'django.contrib.humanize',
-    'debug_toolbar',
     'accounts.apps.AccountsConfig',
     'contacts.apps.ContactsConfig',
 
@@ -60,14 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-INTERNAL_IPS = [
-    # ...
-    '127.0.0.1',
-    # ...
-]
-
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
