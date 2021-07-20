@@ -1,0 +1,881 @@
+[
+{
+    "model": "pages.team",
+    "pk": 2,
+    "fields": {
+        "first_name": "Yash",
+        "last_name": "patel",
+        "designation": "Full stack Developer",
+        "photo": "photos/2021/06/14/pexels-mentatdgt-937481.jpg",
+        "facebook_link": "https://www.facebook.com/profile.php?id=100068235064576",
+        "twitter_link": "https://twitter.com/yashpat41137363",
+        "created_date": "2021-06-14T09:47:03.611Z"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 3,
+    "fields": {
+        "first_name": "Mark",
+        "last_name": "Gol",
+        "designation": "UI & UX Designer",
+        "photo": "photos/2021/06/14/pexels-monstera-6311503.jpg",
+        "facebook_link": "https://www.facebook.com/",
+        "twitter_link": "https://twitter.com/",
+        "created_date": "2021-06-14T09:51:16.487Z"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 4,
+    "fields": {
+        "first_name": "Rhythm",
+        "last_name": "Mendawala",
+        "designation": "Cyber Security",
+        "photo": "photos/2021/06/14/pexels-koolshooters-7327760.jpg",
+        "facebook_link": "https://www.facebook.com/",
+        "twitter_link": "https://twitter.com/",
+        "created_date": "2021-06-14T09:53:55.787Z"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 5,
+    "fields": {
+        "first_name": "Nirali",
+        "last_name": "Patel",
+        "designation": "Account Manager",
+        "photo": "photos/2021/06/14/pexels-andrea-piacquadio-3756679.jpg",
+        "facebook_link": "https://www.facebook.com/",
+        "twitter_link": "https://twitter.com/",
+        "created_date": "2021-06-14T10:04:15.400Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "car_title": "2017 Ferrari 488 GTB",
+        "state": "Gujarat",
+        "city": "Ahmedabad",
+        "color": "White",
+        "model": "488 GTB",
+        "year": 2017,
+        "condition": "Used",
+        "price": 40000,
+        "description": "<p>The&nbsp;<strong>Ferrari 488</strong>&nbsp;(Type F142M) is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Rear_mid-engine,_rear-wheel_drive_layout\" title=\"Rear mid-engine, rear-wheel drive layout\">mid-engine</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Sports_car\" title=\"Sports car\">sports car</a>&nbsp;produced by the Italian automobile manufacturer&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari\" title=\"Ferrari\">Ferrari</a>. The car replaced the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_458\" title=\"Ferrari 458\">458</a>, being the first mid-engine Ferrari to use a turbocharged V8 since the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F40\" title=\"Ferrari F40\">F40</a>.</p>\r\n\r\n<p>The car is powered by a 3.9-litre&nbsp;<a href=\"https://en.wikipedia.org/wiki/Twin-turbocharged\" title=\"Twin-turbocharged\">twin-turbocharged</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/V8_engine\" title=\"V8 engine\">V8 engine</a>, smaller in displacement but generating a higher power output than the 458&#39;s&nbsp;<a href=\"https://en.wikipedia.org/wiki/Naturally_aspirated_engine\" title=\"\">naturally aspirated engine</a>. The 488 GTB was named &quot;The Supercar of the Year 2015&quot; by car magazine&nbsp;<a href=\"https://en.wikipedia.org/wiki/Top_Gear_(magazine)\" title=\"Top Gear (magazine)\"><em>Top Gear</em></a>, as well as becoming&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Motor_Trend\" title=\"Motor Trend\">Motor Trend</a></em>&#39;s 2017 &quot;Best Driver&#39;s Car&quot;.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-7\">[7]</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Jeremy_Clarkson\" title=\"Jeremy Clarkson\">Jeremy Clarkson</a>&nbsp;announced the 488 Pista as his 2019 Supercar of the Year.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-8\">[8]</a>&nbsp;The 488 was succeeded by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F8_Tributo\" title=\"Ferrari F8 Tributo\">F8 Tributo</a>&nbsp;in February 2019.</p>",
+        "car_photo": "photos/2021/06/19/1902536891.jpg",
+        "car_photo_1": "photos/2021/06/19/1902536917.jpg",
+        "car_photo_2": "photos/2021/06/19/1902537043.jpg",
+        "car_photo_3": "photos/2021/06/19/1902537077.jpg",
+        "car_photo_4": "photos/2021/06/19/1902537082.jpg",
+        "features": "Cruise Control,Audio Interface,Airbags,Alarm System,Power Steering,Wind Deflector,Bluetooth Handset",
+        "body_style": "Sport",
+        "engine": "3.4L Mid-Engine V8",
+        "transmission": "Automatic",
+        "interier": "Grey",
+        "miles": 10000,
+        "doors": 2,
+        "pissengers": 2,
+        "vin_no": "ZFF79ALA4H0223816",
+        "milage": 5,
+        "fuel_type": "Petrol",
+        "no_if_owners": "1",
+        "is_features": true,
+        "created_at": "2021-06-19T20:16:47Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "car_title": "2017 Ford Edge",
+        "state": "Gujarat",
+        "city": "Kheda",
+        "color": "Black",
+        "model": "Edge",
+        "year": 2017,
+        "condition": "Used",
+        "price": 25000,
+        "description": "<p>The&nbsp;<strong>Ford Edge</strong>&nbsp;is a range of&nbsp;<a href=\"https://en.wikipedia.org/wiki/Crossover_(automobile)\" title=\"Crossover (automobile)\">crossover SUVs</a>&nbsp;manufactured by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Motor_Company\" title=\"Ford Motor Company\">Ford Motor Company</a>. Introduced for the 2007 model year, the Edge is the first&nbsp;<a href=\"https://en.wikipedia.org/wiki/Mid-size_CUV\" title=\"Mid-size CUV\">mid-size CUV</a>&nbsp;marketed by Ford in North America; the model line is currently in its second generation. Deriving its name from a trim package of the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)\" title=\"Ford Ranger (Americas)\">Ford Ranger</a>, the Ford Edge is slotted between the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Escape\" title=\"Ford Escape\">Ford Escape</a>&nbsp;and the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Explorer\" title=\"Ford Explorer\">Ford Explorer</a>&nbsp;within the Ford product line.</p>\r\n\r\n<p>Sharing its underpinnings with the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Fusion_(Americas)\" title=\"\">Ford Fusion sedan</a>, Ford has also produced the model line as the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Lincoln_MKX\" title=\"Lincoln MKX\">Lincoln MKX</a>&nbsp;(since 2019, the Lincoln Nautilus); the first generation was also produced as the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Mazda_CX-9\" title=\"Mazda CX-9\">Mazda CX-9</a>. The second generation is also marketed by&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_of_Europe\" title=\"Ford of Europe\">Ford of Europe</a>, slotted between the Kuga (Escape) and the Explorer PHEV.</p>",
+        "car_photo": "photos/2021/06/19/1901478607.jpg",
+        "car_photo_1": "photos/2021/06/19/1901478618.jpg",
+        "car_photo_2": "photos/2021/06/19/1901478646.jpg",
+        "car_photo_3": "photos/2021/06/19/1901478672.jpg",
+        "car_photo_4": "photos/2021/06/19/1901478687.jpg",
+        "features": "Cruise Control,Audio Interface,Air Conditioning,Power Steering,Direct Fuel Injection,Auto Start/Stop",
+        "body_style": "SUV",
+        "engine": "3.4L Mid-Engine V7",
+        "transmission": "Automatic",
+        "interier": "Grey",
+        "miles": 5000,
+        "doors": 5,
+        "pissengers": 7,
+        "vin_no": "2FMPK4K94HBB58150",
+        "milage": 8,
+        "fuel_type": "Petrol",
+        "no_if_owners": "2",
+        "is_features": true,
+        "created_at": "2021-06-19T20:42:01Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "car_title": "2017 Ford F-250 Super Duty",
+        "state": "Goa",
+        "city": "Panaji",
+        "color": "Black",
+        "model": "F-250",
+        "year": 2017,
+        "condition": "Used",
+        "price": 30000,
+        "description": "<p>The&nbsp;<strong>Ford Super Duty</strong>&nbsp;(short for F-Series Super Duty) is a series of trucks manufactured by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Motor_Company\" title=\"Ford Motor Company\">Ford Motor Company</a>. Introduced in 1998 for the 1999 model year (the 1998 model year was skipped), the F-Series Super Duty trucks marked the addition of a heavy-duty pickup to the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_F-Series\" title=\"Ford F-Series\">Ford F-Series</a>&nbsp;range with the new versions of the F-250, F-350, and F-450 trucks, while the previous 1987&ndash;1997 F-Super Duty&nbsp;<a href=\"https://en.wikipedia.org/wiki/Chassis_cab\" title=\"\">chassis cabs</a>&nbsp;were replaced by the F-450 chassis cab and F-550 Super Duty.</p>\r\n\r\n<p>The Super Duty trucks utilize a distinct chassis from the lighter&nbsp;<a href=\"https://en.wikipedia.org/wiki/F-150\" title=\"F-150\">F-150</a>, with heavier-duty chassis and suspension components to allow for higher payload and towing capacities; additionally, the product line continued the use of&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Power_Stroke_engine\" title=\"Ford Power Stroke engine\">Ford PowerStroke</a>&nbsp;diesel engines. With a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Gross_vehicle_weight_rating\" title=\"Gross vehicle weight rating\">GVWR</a>&nbsp;over 8,500&nbsp;lb (3,900&nbsp;kg), Super Duty pickups are&nbsp;<a href=\"https://en.wikipedia.org/wiki/Truck_classification\" title=\"Truck classification\">class 2 and 3</a>&nbsp;trucks while chassis cab trucks are class 4 and class 5. The F-Series Super Duty has been used as the base chassis of the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Excursion\" title=\"Ford Excursion\">Ford Excursion</a>&nbsp;full-size SUV.</p>\r\n\r\n<p>Ford F-250 to F-550 Super Duty trucks are assembled at the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Kentucky_Truck_Assembly\" title=\"Kentucky Truck Assembly\">Kentucky Truck Plant</a>&nbsp;in&nbsp;<a href=\"https://en.wikipedia.org/wiki/Louisville,_Kentucky\" title=\"Louisville, Kentucky\">Louisville, Kentucky</a>, while medium-duty&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_F-650\" title=\"Ford F-650\">F-650 and F-750s</a>&nbsp;are assembled at&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ohio_Assembly\" title=\"Ohio Assembly\">Ohio Assembly</a>&nbsp;in&nbsp;<a href=\"https://en.wikipedia.org/wiki/Avon_Lake,_Ohio\" title=\"Avon Lake, Ohio\">Avon Lake, Ohio</a>&nbsp;(prior to 2016, medium-duty trucks were assembled in the Blue Diamond Truck joint venture with&nbsp;<a href=\"https://en.wikipedia.org/wiki/Navistar\" title=\"Navistar\">Navistar</a>&nbsp;in Mexico). As of 2016, the Ford Super Duty is sold in the United States, Canada, Mexico, Venezuela (F-250 and F-350), Suriname, Brazil (F-350/F-4000), Argentina (F-4000 only), Angola (F-250 and F-350), Cambodia, the Middle East, and Iceland (F-350 only) in LHD only. In Suriname, even though traffic is on the left side of the road, the import and registry of left hand drive vehicles is allowed. In Australia, it was officially imported in right hand drive from Brazil between 2001&ndash;06, however as of 2007, Ford no longer offers the Super Duty in Australia.</p>",
+        "car_photo": "photos/2021/06/19/1894300905.jpg",
+        "car_photo_1": "photos/2021/06/19/1894300894.jpg",
+        "car_photo_2": "photos/2021/06/19/1894300920.jpg",
+        "car_photo_3": "photos/2021/06/19/1900155012.jpg",
+        "car_photo_4": "",
+        "features": "Audio Interface,Airbags,ParkAssist,Power Steering,Reversing Camera",
+        "body_style": "SUV",
+        "engine": "3.4L Mid-Engine V7",
+        "transmission": "Automatic",
+        "interier": "Grey",
+        "miles": 13000,
+        "doors": 3,
+        "pissengers": 2,
+        "vin_no": "2FMPK4K94HBB582130",
+        "milage": 10,
+        "fuel_type": "Diesel",
+        "no_if_owners": "1",
+        "is_features": true,
+        "created_at": "2021-06-19T21:00:00Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 9,
+    "fields": {
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "car_id": 3,
+        "customer_need": "I'm interested in this",
+        "car_title": "2017 Ford F-250 Super Duty",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "email": "yashp63544@gmail.com",
+        "phone": "",
+        "message": "kkkkkk",
+        "user_id": 1,
+        "created_at": "2021-07-20T18:39:16.277Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 11,
+    "fields": {
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "car_id": 1,
+        "customer_need": "I'm interested in this",
+        "car_title": "2017 Ferrari 488 GTB",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "email": "yashp63544@gmail.com",
+        "phone": "",
+        "message": "qads",
+        "user_id": 1,
+        "created_at": "2021-07-20T18:46:53.709Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost",
+        "name": "localhost"
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "Facebook login",
+        "client_id": "535464931144415",
+        "secret": "5d1499f876f141aa21a25e0af7d9507b",
+        "key": "",
+        "sites": [
+            [
+                "localhost"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "978041318198-eut6r8jugn2315i6iu4pbrbe25pgm5nq.apps.googleusercontent.com",
+        "secret": "JU_4XgmY_Zz7cdUaN5OVBPV-",
+        "key": "",
+        "sites": [
+            [
+                "localhost"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 1,
+    "fields": {
+        "app": 1,
+        "account": 1,
+        "token": "EAAHnAKUCst8BAMoxTJ0m1MJ54aRIaMlA97ORFzA6MQxoDGAcWO0r9qCxSJCpUO2RsDkoEl0TqGpZAwBUHqTbLHC2FQ2ei5QJPiSAMCEoptvNKaOJWKQ6JcT6PRvXmZAXvoctEkzxAYwXdRvRRCYZCxLevAbp2InNpStodmvYgZDZD",
+        "token_secret": "",
+        "expires_at": "2021-09-17T18:20:33.637Z"
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 2,
+    "fields": {
+        "app": 2,
+        "account": 2,
+        "token": "ya29.a0ARrdaM8gijeEvGAouIoQM1Yv3dk6lSq9yEasIwHi3fqAwupvbpVLi8bAAHYbwpzhzGKQvLf5GABK80dI78Ij1kwOixc3ei4hww0taUufx7dSzHcwcA0wA9R_PQS79IPUQsgaKQ0N8ZF4dn_kg0G1MUtrVp3H",
+        "token_secret": "",
+        "expires_at": "2021-07-19T19:52:43.081Z"
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 3,
+    "fields": {
+        "app": 2,
+        "account": 3,
+        "token": "ya29.a0ARrdaM9-Azp9JxZSRMToUnH2d-u1TuB_ldU8F4KtuXYDMv-foDYjiYUQwIQyE_ion1n9Xb0fTx-gir73fTmrKqD1BhGG68A5f8BOH9o6Jy7NorbBUKDgRm_IaGxpmC_y9aFQgFXcRvddcZi9nwHyBntg3ue0",
+        "token_secret": "",
+        "expires_at": "2021-07-20T10:25:03.537Z"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$V3AQCnwq6mXM3heRVOOB12$hfeeTMNRA6kq7a/h3kBs11jp77m2O/RPeK7GbRak/Qg=",
+        "last_login": "2021-07-20T09:29:21.076Z",
+        "is_superuser": true,
+        "username": "yash",
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "email": "yashp63544@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-06-13T13:44:25Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$je9WUDb3h6FNBvfF0ZAUr9$0VYAkqYDIr49etrwflI6HgIFrFG5BY2xKbpjAtY9XlU=",
+        "last_login": "2021-07-19T17:18:08.835Z",
+        "is_superuser": false,
+        "username": "yashp",
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "email": "mailforyash21@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-19T16:37:42.996Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!ehRwkhwJXTaHI0ZIwyVVefgF8m3xa1xEpfvf89eQ",
+        "last_login": "2021-07-19T18:22:52.332Z",
+        "is_superuser": false,
+        "username": "yash6",
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-19T18:20:35.671Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!zQmfaM56hSOBxk8firfpVA6LewQlrcuiGbFc28iO",
+        "last_login": "2021-07-19T18:52:44.809Z",
+        "is_superuser": false,
+        "username": "yash0",
+        "first_name": "Yash",
+        "last_name": "Patel",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-19T18:51:23.232Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!OXDh1e2ggYx30IlzSyqQijI6y3IJYMaZARnTDDrC",
+        "last_login": "2021-07-20T09:25:05.257Z",
+        "is_superuser": false,
+        "username": "yash7",
+        "first_name": "yash",
+        "last_name": "patel",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-20T03:06:19.980Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "39h6pgfghxank1irbuok0j1lnftlbm5l",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUVtYkLKyM4ZIju2SQE1UtNOiLtDpQ6w_vfef5mE61LS2mROI5uzAXP43QjzQ6YN8B2nW7W5Tss8kt0Uu9Nmr5Xledndv4OCrXxrxwwhoAckLxRD5BDppAOqO3IU7XIvwTlQ50UCImgcup4iZmURAfP-AANwOS8:1m5YNg:Zfa9kW_9b7hfbndyFCasq1Rzl6ptSshqyrvzaa7iGoQ",
+        "expire_date": "2021-08-02T18:52:44.849Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jt8zl4qlq462znmp0klujaveyzd2aojw",
+    "fields": {
+        "session_data": "e30:1m5Xtd:0o4UlBTVdFpjxV855xrV9seSVGr0xgNM8BepJO44p3w",
+        "expire_date": "2021-08-02T18:21:41.220Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lbedqfuxhxb12uozwneynqmcb4z25asr",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGFigu3XsGMgODVA1NSrsy3l1JutDtf-_9lwi4byXsjdcwJ3EWIE6_G2F8cO0g3bHeFhmXuq0zya7IgzZ5XRI_L4f7d1CwlW89JKs8RIKYDFiegDKbkUbIlI0CzxE7xUlb0HnwLiEYB045r9lGI94f7Gk3wQ:1lsQXs:tURCYRKqZoBppsSv3j3pRKfKHGVOzPiyOOzF_2IpHOg",
+        "expire_date": "2021-06-27T13:53:00.223Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o1te0qigcfqgx0k2fa90is28d8rhn2kd",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGFigu3XsGMgODVA1NSrsy3l1JutDtf-_9lwi4byXsjdcwJ3EWIE6_G2F8cO0g3bHeFhmXuq0zya7IgzZ5XRI_L4f7d1CwlW89JKs8RIKYDFiegDKbkUbIlI0CzxE7xUlb0HnwLiEYB045r9lGI94f7Gk3wQ:1m4zKA:tw5IlxUZmLnkpSpp-m7LVfsdfu3dNwD2Ef0titW2Z1E",
+        "expire_date": "2021-08-01T05:26:46.867Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zcag768pjs7rlio3di9lmwmfzxblf6t9",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIjJDT0ZOQ3dlVlJvZiJdfQ:1m5XrR:H3-xbk2kgzbLudks1XBrkVZtHkeKfIwMz7gxwHnQkwU",
+        "expire_date": "2021-08-02T18:19:25.850Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-06-13T13:53:41.377Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "yash",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-06-14T05:55:42.805Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Yash",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-06-14T07:28:58.345Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Yash",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-06-14T09:42:50.766Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Yash",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-06-14T09:47:03.619Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Yash",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-06-14T09:51:16.503Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Mark",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-06-14T09:53:55.795Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "Rhythm",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-06-14T10:03:09.652Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Yash",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-06-14T10:04:15.408Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "5",
+        "object_repr": "Nirali",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-06-19T15:10:42.577Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Car object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-06-19T15:29:56.321Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-06-19T15:36:16.221Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford F-250 Super Duty",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-07-11T16:29:27.353Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford F-250 Super Duty",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car photo 4\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-07-19T18:11:39.997Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-07-19T18:15:28.410Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-07-19T18:48:01.710Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-07-20T13:00:00.562Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "3",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-07-20T13:00:00.618Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "2",
+        "object_repr": "admin@admin.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-07-20T13:00:00.658Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "1",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-07-20T13:04:20.141Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "6",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-07-20T13:04:20.205Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "5",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-07-20T13:04:20.245Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "4",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-07-20T13:09:10.222Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "8",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-07-20T13:09:10.257Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "7",
+        "object_repr": "yashp63544@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-07-20T13:16:45.828Z",
+        "user": [
+            "yash"
+        ],
+        "content_type": [
+            "contacts",
+            "contact"
+        ],
+        "object_id": "10",
+        "object_repr": "kirtanp8200@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "yash6"
+        ],
+        "provider": "facebook",
+        "uid": "128200379464464",
+        "last_login": "2021-07-19T18:22:52.052Z",
+        "date_joined": "2021-07-19T18:20:35.831Z",
+        "extra_data": "{\"id\": \"128200379464464\", \"name\": \"Yash Patel\", \"first_name\": \"Yash\", \"last_name\": \"Patel\"}"
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "yash0"
+        ],
+        "provider": "google",
+        "uid": "107168316620362949960",
+        "last_login": "2021-07-19T18:52:44.537Z",
+        "date_joined": "2021-07-19T18:51:23.411Z",
+        "extra_data": "{\"id\": \"107168316620362949960\", \"name\": \"Yash Patel\", \"given_name\": \"Yash\", \"family_name\": \"Patel\", \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GiijFK9YD8rsAK4Azb-r3L-84MeX11lO5kp3A4S=s96-c\", \"locale\": \"en\"}"
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "yash7"
+        ],
+        "provider": "google",
+        "uid": "110727783032935027543",
+        "last_login": "2021-07-20T09:25:04.913Z",
+        "date_joined": "2021-07-20T03:06:20.185Z",
+        "extra_data": "{\"id\": \"110727783032935027543\", \"name\": \"yash patel\", \"given_name\": \"yash\", \"family_name\": \"patel\", \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GjI0I7-ROX4vo_t9phAY444G1rVKbTLsgd50l16Vg=s96-c\", \"locale\": \"en-GB\"}"
+    }
+}
+]
