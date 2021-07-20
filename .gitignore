@@ -37,6 +37,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+/carzone/cred.py
 eggs/
 .eggs/
 parts/
