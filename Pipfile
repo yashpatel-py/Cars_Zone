@@ -14,6 +14,7 @@ sqlparse = "==0.4.1"
 Django = "==3.2.4"
 Pillow = "==8.2.0"
 django-debug-toolbar = "*"
+django-allauth = "*"
 
 [dev-packages]
 
