@@ -21,11 +21,7 @@ This peoject is purely based on django which is python web framework.
 
 ---
 
-<center>
-
 ## OR
-
-</center>
 
 ---
 
